@@ -1,0 +1,117 @@
+body{
+	color: #434444;
+}
+header{
+	background-color: gainsboro;
+	text-align: center;
+	justify-content: center;
+	padding: 10px 10px;
+}
+.header-logo{
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+}
+.container{
+	padding-top: 50px;
+	
+}
+.container h1::after{
+	content: '';
+    background: #ff9800;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+
+/* Product Grid */
+.product-grid{
+	padding-bottom: 20px;
+	padding-top: 20px;
+	text-align: center;
+	justify-content: center;
+	border: 2px solid #ff9800;
+}
+.product-grid:hover{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.image{
+	position: relative;
+}
+.overlay{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: rgba(67, 68, 68, 0.7);
+}
+.image:hover .overlay{
+	opacity: 1;
+}
+
+.w-100{
+	width: 290px;
+	height: 290px;
+	padding-bottom: 12px;
+	
+}
+
+@media (max-width: 600px) {
+	.w-100{
+		width:40%;
+		padding: 10px 20px;
+	}
+}
+.buy{
+    border: 2px solid #00b8a9;
+    border-radius: 20px;
+    background: none;
+    padding: 10px 15px;
+    margin: 10px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #fc914e;
+    transition: 1s;
+    position: relative;
+	overflow: hidden;
+	text-align: center;
+	justify-content: center;
+
+}
+
+#footer{
+    text-align: center;
+	background-color: gainsboro;
+	margin-top: 10px;
+    
+}
+.ctc-us{
+	padding: 10px 10px;
+}
+.border{
+    width: 100px;
+    height: 4px;
+    background: aqua;
+}
+.social-icon{
+    margin: 20px 10px;
+}
+.fa-whatsapp{
+    color: green;
+}
+.fa-facebook{
+    color: blue;
+}
+.fa-instagram{
+    color: rgb(180, 51, 72);
+}
+.fa-telegram{
+    color: rgb(32, 182, 241);
+}
+

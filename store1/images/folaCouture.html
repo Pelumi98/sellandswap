@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>house of treasure</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  </head>
+  <style>
+      body{
+          padding: 0;
+          margin: 0;
+      }
+      .product-grid{
+          font-family: sans-serif;
+          text-align: center;
+          padding: 12px 15px;
+          border: 4px solid gainsboro;
+          margin: 10px 10px;
+      }
+      .product-grid .product-image{
+          position: relative;
+          overflow: hidden;
+      }
+      .product-grid .product-image img{
+          width: 100%;
+          height: auto;
+          transition: all 0.3s ease 0s;
+      }
+      
+      .product-grid .product-sale-label{
+          color: white;
+          background: #0eead0;
+          font-size: 13px;
+          text-transform: capitalize;
+          line-height: 40px;
+          width: 40px;
+          height: 40px;
+          border-radius: 50px;
+          position: absolute;
+          top: 10px;
+          left: 10px;
+      }
+      .product-grid .product-links{
+          background: white;
+          width: 190px;
+          padding: 6px 0;
+          margin: 0;
+          list-style: none;
+          border-radius: 50px;
+          box-shadow: 0px 0px 5.95px 1.05px rgba(0,0,0,0.06);
+          opacity: 0;
+          transform: translateX(-50%);
+          position: absolute;
+          bottom: -100px;
+          left:50%;
+          transition: all 0.3s ease 0s;
+      }
+      .product-grid:hover .product-links{
+          opacity: 1;
+          bottom: 20px;
+      }
+      .product-grid:hover .product-links li{
+          margin: 0 20px;
+          display: inline-block;
+      }
+      .product-grid:hover .product-links li a{
+          color: #444;
+          font-size: 19px;
+          line-height: 35px;
+          width: 35px;
+          height: 35px;
+          border-radius: 50px;
+          display: block;
+          transition: all 0.3s ease 0s;
+      }
+      .product-grid .product-links li a:hover{
+          color: white;
+          background: #40a944;
+      }
+      .buy-now{
+        border: 1px solid #00b8a9;
+        border-radius: 20px;
+        background: none;
+        padding: 10px 15px;
+        margin: 10px 10px;
+        font-size: 15px;
+        cursor: pointer;
+        color: #fc914e;
+        transition: 1s;
+        position: relative;
+        overflow: hidden;
+      }
+    .buy-now:hover{
+    color: #fff;
+    }
+    .buy-now::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #00b8a9;
+    z-index: -1;
+    transition: 1s;
+    }
+    .title{
+        padding: 15px 5px;
+    }
+
+    .welcome{
+        padding: 5px 0px 0px 10px;
+    }
+
+    header{
+	background-color: gainsboro;
+	text-align: center;
+	justify-content: center;
+	padding: 10px 10px;
+}
+    .header-logo{
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+}
+#footer{
+        background-color: gainsboro;
+    
+}
+.ctc-us{
+	padding: 10px 10px;
+}
+.border{
+    width: 100px;
+    height: 4px;
+    background: aqua;
+}
+.social-icon{
+    margin: 20px 10px;
+}
+.fa-whatsapp{
+    color: green;
+}
+.fa-facebook{
+    color: blue;
+}
+.fa-instagram{
+    color: rgb(180, 51, 72);
+}
+.fa-telegram{
+    color: rgb(32, 182, 241);
+}
+.container-fluid{
+    text-align: center;
+}
+
+
+  </style>
+  <body>
+    <header>
+        <img class="header-logo" src="./FC COUTURE/IMG-20201127-WA0010.jpg" alt="">
+        <h2><strong>Fola's Couture</strong></h2>
+        <h6>Bespoke tailoring, Bridal stylist & Fashion designing</h6>
+    </header>
+      
+
+    <br>
+    
+    <h5 class="welcome">Browse through our collection;</h5>
+    <br><br>
+    <div class="row">
+        <div class="col-md-3 col-sm-6 col-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="">
+                        <img class="pic-1" src="./FC COUTURE/img1.jpg" alt="">
+                    </a>
+                    <span class="product-sale-label">SALE</span>
+                    <ul class="product-links">
+                        <li><a href=""><i class="fa fa-shopping-cart"></i></a></li>
+                        <li><a href=""><i class="fa fa-heart"></i></a></li>
+                        <li><a href=""><i class="fa fa-cog"></i></a></li>
+                        <li><a href=""><i class="fa fa-search"></i></a></li>
+                    </ul>
+                </div>
+                <div class="product-content">
+                    <h5 class="title"> <strong> Emerald for Bride</strong></h5>
+                    <h6>It is a carefully made dress to enhance the beauty and confidence of the bride.&nbsp;Where green is the symbol of fruitfulness.</h6>
+                    <span class="category"><a href=""></a></span>
+                    <div class="price"> <strong>₦18,000</strong> </div>
+                    <a href="https://wa.me/2348152153628"></a><button class="buy-now">BUY NOW</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="">
+                        <img class="pic-1" src="./FC COUTURE/img2.jpg" alt="">
+                    </a>
+                    <span class="product-sale-label">SALE </span>
+                    <ul class="product-links">
+                        <li><a href=""><i class="fa fa-shopping-cart"></i></a></li>
+                        <li><a href=""><i class="fa fa-heart"></i></a></li>
+                        <li><a href=""><i class="fa fa-cog"></i></a></li>
+                        <li><a href=""><i class="fa fa-search"></i></a></li>
+                    </ul>
+                </div>
+                <div class="product-content">
+                    <h5 class="title"><strong>Floral Layers</strong></h5>
+                    <h6>Designed and made for comfort and elegance</h6>
+                    <span class="category"><a href=""></a></span>
+                    <div class="price"> <strong>₦7,000</strong> </div>
+                    <a href="https://wa.me/2348152153628"></a><button class="buy-now">BUY NOW</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="">
+                        <img class="pic-1" src="./FC COUTURE/img3.jpg" alt="">
+                    </a>
+                    <span class="product-sale-label">SALE</span>
+                    <ul class="product-links">
+                        <li><a href=""><i class="fa fa-shopping-cart"></i></a></li>
+                        <li><a href=""><i class="fa fa-heart"></i></a></li>
+                        <li><a href=""><i class="fa fa-cog"></i></a></li>
+                        <li><a href=""><i class="fa fa-search"></i></a></li>
+                    </ul>
+                </div>
+                <div class="product-content">
+                    <h5 class="title"><strong>Mami & I</strong></h5>
+                    <h6>It is a beautiful mother daughter combo with an African print fabric.</h6>
+                    <span class="category"><a href=""></a></span>
+                    <div class="price"> <strong>₦13,000</strong> </div>
+                    <a href="https://wa.me/2348152153628"></a><button class="buy-now">BUY NOW</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-6">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a href="">
+                        <img class="pic-1" src="./FC COUTURE/img4.jpg" alt="">
+                    </a>
+                    <span class="product-sale-label">SALE </span>
+                    <ul class="product-links">
+                        <li><a href=""><i class="fa fa-shopping-cart"></i></a></li>
+                        <li><a href=""><i class="fa fa-heart"></i></a></li>
+                        <li><a href=""><i class="fa fa-cog"></i></a></li>
+                        <li><a href=""><i class="fa fa-search"></i></a></li>
+                    </ul>
+                </div>
+                <div class="product-content">
+                    <h5 class="title"><strong>Hadassa</strong></h5>
+                    <h6>It is a simple elegant dress for queens. Fit for any informal or semi-formal occasion</h6>
+                    <span class="category"><a href=""></a></span>
+                    <div class="price"> <strong>₦7,000</strong> </div>
+                    <a href="https://wa.me/2348152153628"></a><button class="buy-now">BUY NOW</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="white-section" id="footer">
+        <div class="ctc-us">
+        <h4 >Contact Us</h4>
+        <h6>E-MAIL: folasadeoloni@gmail.com</h6>
+        <h6>PHONE: +2348152153628</h6>
+        </div>
+       <div class="container-fluid">
+           <a href="https://wa.me/2348152153628"><span class="social-icon fab fa-whatsapp fa-4x"></span></a>
+           <a href="#"><span class="social-icon fab fa-twitter fa-4x"></span></a>
+           <a href="https://Instagram.com/folscouture"><span class="social-icon fab fa-instagram fa-4x"></span></a>
+           <a href="#"><span class="social-icon fab fa-telegram fa-4x"></span></a>
+           <h6 class= "footer-text">© Copyright 2020 SELL&SWAP. All Rights Reserved.</h6>
+       </div>
+      
+     </footer>
+
+  </body>
+</html>
